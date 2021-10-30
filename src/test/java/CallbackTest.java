@@ -5,8 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import static java.lang.Thread.sleep;
-
 class CallbackTest {
     private WebDriver driver;
 
@@ -28,7 +26,7 @@ class CallbackTest {
     }
 
     @Test
-    public void shouldHappyPathTest() throws InterruptedException {
+    public void shouldHappyPathTest() {
         ChromeOptions options = new ChromeOptions(); // Подскажите в комментариях правильно ли я расположил опцию headless. т.к. окно браузера запускается,  но теста не видать. Но в итоге он проходит
         options.addArguments("--disable-dev-shm-usage");
         options.addArguments("--no-sandbox");
@@ -45,5 +43,23 @@ class CallbackTest {
         driver.quit(); // дописал чтоб закрывалось окно браузера, но что-то не закрывается.
     }
 
+    @Test
+    public void shouldValidationCheckTest() {
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
+        driver.get("http://localhost:9999");
+        driver.findElement(By.cssSelector("[type='text']")).sendKeys("Petr Vodkin");
+        driver.findElement(By.cssSelector("[type='tel']")).sendKeys("+79519506677");
+        driver.findElement(By.cssSelector(".checkbox")).click();
+        driver.findElement(By.cssSelector(".button__text")).click();
+        String actualMassage = driver.findElement(By.cssSelector("[class='input__sub']")).getText().strip();
+        String expectedMassage = "Имя и Фамилия указаные неверно. Допустимы только русские буквы, пробелы и дефисы.";
+        Assertions.assertEquals(expectedMassage, actualMassage, "Сообщение не соответствует ожидаемому");
+        driver.quit();
+
+    }
 }
 
