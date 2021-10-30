@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CallbackTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-30T17:27:54" hostname="DESKTOP-GAPUKHF" time="9.188">
+<testsuite name="CallbackTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-30T17:31:18" hostname="DESKTOP-GAPUKHF" time="8.78">
   <properties/>
-  <testcase name="shouldHappyPathTest()" classname="CallbackTest" time="4.768"/>
-  <testcase name="shouldValidationCheckTest()" classname="CallbackTest" time="4.415"/>
+  <testcase name="shouldHappyPathTest()" classname="CallbackTest" time="4.69"/>
+  <testcase name="shouldValidationCheckTest()" classname="CallbackTest" time="4.089"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 46511
+Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 44909
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-окт. 30, 2021 10:27:56 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+окт. 30, 2021 10:31:19 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 7392
+Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 31509
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-окт. 30, 2021 10:27:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+окт. 30, 2021 10:31:21 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 40158
+Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 4111
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-окт. 30, 2021 10:28:00 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+окт. 30, 2021 10:31:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 1446
+Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 23933
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-окт. 30, 2021 10:28:02 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+окт. 30, 2021 10:31:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
 ]]></system-err>
 </testsuite>

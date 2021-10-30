@@ -21,7 +21,7 @@ class CallbackTest {
     }
 
     @BeforeEach
-    void setUp() {
+    void setupTest() {
         driver = new ChromeDriver();
     }
 
