@@ -1,6 +1,5 @@
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import io.github.bonigarcia.wdm.managers.ChromeDriverManager;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -13,13 +12,10 @@ class CallbackTest {
     @BeforeAll
     static void setupClass() {
         WebDriverManager.chromedriver().setup();
-        ChromeDriverManager.getInstance().setup();
     }
-
 
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "./chromedriver/chromedriver.exe");
     }
 
     @BeforeEach
