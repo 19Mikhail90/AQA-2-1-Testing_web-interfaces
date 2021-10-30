@@ -9,6 +9,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 class CallbackTest {
     private WebDriver driver;
 
+
     @BeforeAll
     static void setupClass() {
         WebDriverManager.chromedriver().setup();
@@ -20,6 +21,11 @@ class CallbackTest {
 
     @BeforeEach
     void setupTest() {
+        ChromeOptions options = new ChromeOptions(); // Подскажите в комментариях правильно ли я расположил опцию headless. т.к. окно браузера запускается,  но теста не видать. Но в итоге он проходит
+        options.addArguments("--disable-dev-shm-usage");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--headless");
+        driver = new ChromeDriver(options);
         driver = new ChromeDriver();
     }
 
@@ -31,11 +37,7 @@ class CallbackTest {
 
     @Test
     public void shouldHappyPathTest() {
-        ChromeOptions options = new ChromeOptions(); // Подскажите в комментариях правильно ли я расположил опцию headless. т.к. окно браузера запускается,  но теста не видать. Но в итоге он проходит
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
+
         driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("[type='text']")).sendKeys("Ганизада Ахад Гани-оглы");
         driver.findElement(By.cssSelector("[type='tel']")).sendKeys("+79519506677");
@@ -49,11 +51,7 @@ class CallbackTest {
 
     @Test
     public void shouldValidationCheckTest() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--disable-dev-shm-usage");
-        options.addArguments("--no-sandbox");
-        options.addArguments("--headless");
-        driver = new ChromeDriver(options);
+
         driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("[type='text']")).sendKeys("Petr Vodkin");
         driver.findElement(By.cssSelector("[type='tel']")).sendKeys("+79519506677");
