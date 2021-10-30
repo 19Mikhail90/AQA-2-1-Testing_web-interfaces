@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CallbackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-30T14:33:20" hostname="DESKTOP-GAPUKHF" time="6.073">
+<testsuite name="CallbackTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-10-30T14:44:02" hostname="DESKTOP-GAPUKHF" time="5.799">
   <properties/>
-  <testcase name="shouldHappyPathTest()" classname="CallbackTest" time="6.073"/>
+  <testcase name="shouldHappyPathTest()" classname="CallbackTest" time="5.799"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
 SLF4J: Defaulting to no-operation (NOP) logger implementation
 SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
-Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 61702
+Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 63684
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-окт. 30, 2021 7:33:23 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+окт. 30, 2021 7:44:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-окт. 30, 2021 7:33:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+окт. 30, 2021 7:44:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 95
-Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 57509
+Starting ChromeDriver 95.0.4638.17 (a9d0719444d4b035e284ed1fce73bf6ccd789df2-refs/branch-heads/4638@{#178}) on port 62868
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-окт. 30, 2021 7:33:25 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+окт. 30, 2021 7:44:06 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-окт. 30, 2021 7:33:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+окт. 30, 2021 7:44:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found exact CDP implementation for version 95
 ]]></system-err>
 </testsuite>

@@ -13,7 +13,7 @@ class CallbackTest {
 
     @BeforeAll
     static void setUpAll() {
-        System.setProperty("webdriver.chrome.driver", "C:\\tools\\chromedriver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", ".\\chromedriver\\chromedriver.exe");
     }
 
     @BeforeEach
