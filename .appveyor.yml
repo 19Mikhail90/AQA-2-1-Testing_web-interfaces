@@ -1,4 +1,4 @@
-image: Ubuntu  # образ для сборки
+iimage: Ubuntu  # образ для сборки
 
 stack: jdk 11  # версия JDK
 
@@ -9,7 +9,9 @@ branches:
 build: off  # будем использовать свой скрипт сборки
 
 install:
+  # запускаем SUT (& означает, что в фоновом режиме - не блокируем терминал для запуска тестов)
+  - java -jar ./artifacts/app-order.jar &
 
 build_script:
-  - ./gradlew test --info  # запускаем тест, флаг --info позволяет выводить больше информации
+  - ./gradlew test --info
   - chmod +x gradlew
